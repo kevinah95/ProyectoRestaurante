@@ -20,7 +20,7 @@ public partial class Menu
 
     [ForeignKey("IdTipoMenu")]
     [InverseProperty("Menu")]
-    public virtual TipoMenu IdTipoMenuNavigation { get; set; } = null!;
+    public virtual TipoMenu? IdTipoMenuNavigation { get; set; } = null!;
 
     [InverseProperty("IdMenuNavigation")]
     public virtual ICollection<Reservacion> Reservacion { get; set; } = new List<Reservacion>();

@@ -24,13 +24,13 @@ public partial class Reservacion
 
     [ForeignKey("IdCliente")]
     [InverseProperty("Reservacion")]
-    public virtual Clientes IdClienteNavigation { get; set; } = null!;
+    public virtual Clientes? IdClienteNavigation { get; set; } = null!;
 
     [ForeignKey("IdMenu")]
     [InverseProperty("Reservacion")]
-    public virtual Menu IdMenuNavigation { get; set; } = null!;
+    public virtual Menu? IdMenuNavigation { get; set; } = null!;
 
     [ForeignKey("IdMesa")]
     [InverseProperty("Reservacion")]
-    public virtual Mesas IdMesaNavigation { get; set; } = null!;
+    public virtual Mesas? IdMesaNavigation { get; set; } = null!;
 }

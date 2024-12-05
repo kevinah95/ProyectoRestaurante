@@ -24,9 +24,9 @@ public partial class Valoracion
 
     [ForeignKey("IdCliente")]
     [InverseProperty("Valoracion")]
-    public virtual Clientes IdClienteNavigation { get; set; } = null!;
+    public virtual Clientes? IdClienteNavigation { get; set; } = null!;
 
     [ForeignKey("IdMenu")]
     [InverseProperty("Valoracion")]
-    public virtual Menu IdMenuNavigation { get; set; } = null!;
+    public virtual Menu? IdMenuNavigation { get; set; } = null!;
 }

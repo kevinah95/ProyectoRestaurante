@@ -1,0 +1,25 @@
+@model ProyectoRestaurante.DB.Entities.Mesas
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Mesas</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DscMesa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DscMesa)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdMesa">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
