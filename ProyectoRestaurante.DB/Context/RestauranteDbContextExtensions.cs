@@ -16,7 +16,7 @@ public static class RestauranteDbContextExtensions
             SqliteConnectionStringBuilder builder = new SqliteConnectionStringBuilder();
             //Path.Combine(AppContext.BaseDirectory, "Data", "Northwind.db");
             builder.DataSource =
-                "/Users/kevs/Documents/workshop/Curso-Dotnet/ProyectoRestaurante/identifier.sqlite";
+                "../identifier.sqlite";
             
             connectionString = builder.ConnectionString;
         }

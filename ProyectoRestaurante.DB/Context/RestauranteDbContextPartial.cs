@@ -15,7 +15,7 @@ public partial class RestauranteDbContext
             SqliteConnectionStringBuilder builder = new SqliteConnectionStringBuilder();
             
             builder.DataSource =
-                "/Users/kevs/Documents/workshop/Curso-Dotnet/ProyectoRestaurante/identifier.sqlite";
+                "../identifier.sqlite";
 
             optionsBuilder.UseSqlite(builder.ConnectionString);
         }
